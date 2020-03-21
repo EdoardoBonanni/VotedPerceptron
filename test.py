@@ -234,7 +234,7 @@ def prepareTestComplete(xTrain, yNewTrain, VIC, CC, xTest, yTest, d):
     return err
 
 
-def AllTest(xTrain01, yNewTrain01, VIC01, CC01, xTrain, yNewTrain, VIC, CC, xTest, yTest, d):
+def allTest(xTrain01, yNewTrain01, VIC01, CC01, xTrain, yNewTrain, VIC, CC, xTest, yTest, d):
     err01 = prepareTest01(xTrain01, yNewTrain01, VIC01, CC01, xTest, yTest, d)
     err = prepareTest(xTrain, yNewTrain, VIC, CC, xTest, yTest, d)
     plotGraphic(err01, err, d)
@@ -254,7 +254,7 @@ def plotGraphic(err01, err, d):
             errvote.append(err01[i][1])
             erravgUn.append(err01[i][2])
             errrandomUn.append(err01[i][3])
-        for i in range (0, len(err)):
+        for i in range(0, len(err)):
             errlastUn.append(err[i][0])
             errvote.append(err[i][1])
             erravgUn.append(err[i][2])

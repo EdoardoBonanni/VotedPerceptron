@@ -23,16 +23,16 @@ def main():
     yNormal = Ytrain[0:100].copy()
     xReduced01 = Xtrain[0:60].copy()
     yReduced01 = Ytrain[0:60].copy()
-    VIC01, CC01, yNC01, VIC, CC, yNC = t.trainingC(xNormal, yNormal,
+    VIC01, CC01, yNC01, VIC, CC, yNC = t.trainingD(xNormal, yNormal,
                                                    xReduced01, yReduced01, labels, 1)
     XtestReduced = Xtest[0:100].copy()
     YtestReduced = Ytest[0:100].copy()
-    test.AllTest(xReduced01, yNC01, VIC01, CC01,
+    test.allTest(xReduced01, yNC01, VIC01, CC01,
                  xNormal, yNC, VIC, CC,
                  XtestReduced, YtestReduced, 1)
-    VIC01, CC01, yNC01, VIC, CC, yNC = t.trainingC(xNormal, yNormal,
+    VIC01, CC01, yNC01, VIC, CC, yNC = t.trainingD(xNormal, yNormal,
                                                    xReduced01, yReduced01, labels, 2)
-    test.AllTest(xReduced01, yNC01, VIC01, CC01,
+    test.allTest(xReduced01, yNC01, VIC01, CC01,
                  xNormal, yNC, VIC, CC,
                  XtestReduced, YtestReduced, 2)
 

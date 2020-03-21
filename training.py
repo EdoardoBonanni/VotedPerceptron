@@ -64,7 +64,7 @@ def trainingClasses(x, y, labels, T, d, start, step):
     return epochVIC, epochCC, yNewClass
 
 
-def trainingC(x, y, xReduced, yReduced, labels, d):
+def trainingD(x, y, xReduced, yReduced, labels, d):
     print("training epoch 0.1-0.9")
     VIC01, CC01, yNC01 = trainingClasses01(xReduced, yReduced, labels, 10, d, 1, 1)
     if(d == 1):
