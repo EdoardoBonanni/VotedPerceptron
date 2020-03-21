@@ -77,3 +77,4 @@ def trainingC(x, y, xReduced, yReduced, labels, d):
 
 
 
+

@@ -305,3 +305,4 @@ def plotGraphic(err01, err, d):
         plt.legend(['lastUn', 'vote', 'avgUn', 'randomUn'])
         plt.show()
         plt.close()
+

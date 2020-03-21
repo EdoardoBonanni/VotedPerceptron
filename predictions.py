@@ -97,3 +97,4 @@ def methodPredictions(x, vIndices, c, xTrain, yTrain, d):
     randomUn = randomUnnormalized(x, vIndices, c, xTrain, yTrain, d)
     value = [lastUn, voteValue, avgUn, randomUn]
     return value.copy()
+

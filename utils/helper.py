@@ -20,7 +20,6 @@ def create_sprite_image(images):
                 this_img = images[this_filter]
                 spriteimage[i * img_h:(i + 1) * img_h,
                 j * img_w:(j + 1) * img_w] = this_img
-
     return spriteimage
 
 
