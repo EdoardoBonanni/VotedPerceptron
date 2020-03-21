@@ -5,16 +5,16 @@ i grafici per d = 1 e d = 2 della figura 2) ma utilizzando il dataset Zalando al
 
 ## Link utili
 
-[**Large Margin Classification Using the Perceptron Algorithm**](https://link.springer.com/content/pdf/10.1023/A:1007662407062.pdf)
+[**Large Margin Classification Using the Perceptron Algorithm**](https://link.springer.com/content/pdf/10.1023/A:1007662407062.pdf) <br />
 [**Zalando research**](https://github.com/zalandoresearch/fashion-mnist)
 
 ### Dataset
 
-| Name  | Content | Examples | Size | Link 
-| --- | --- |--- | --- |--- |--- |
-| `train-images-idx3-ubyte.gz`  | training set images  | 60,000|26 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz)|
-| `train-labels-idx1-ubyte.gz`  | training set labels  |60,000|29 KBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz)|
-| `t10k-images-idx3-ubyte.gz`  | test set images  | 10,000|4.3 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz)|
+| Name  | Content | Examples | Size | Link |
+| --- | --- |--- | --- |--- |
+| `train-images-idx3-ubyte.gz`  | training set images  | 60,000| 26 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz)|
+| `train-labels-idx1-ubyte.gz`  | training set labels  | 60,000| 29 KBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz)|
+| `t10k-images-idx3-ubyte.gz`  | test set images  | 10,000| 4.3 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz)|
 | `t10k-labels-idx1-ubyte.gz`  | test set labels  | 10,000| 5.1 KBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz)|
 
 ## Prerequisiti
