@@ -65,16 +65,16 @@ usefulFunctions.py
 VotedPerceptron.py
 
 	- classe VotedPerceptronC: contiene le informazioni e la funzione per svolgere il training del dataset utilizzando l'algoritmo Voted-perceptron
-		init:	riceve come parametri il dataset (images e labels), il numero di epoche, il kernel degree, il valore da cui iniziare il ciclo di training e il passo del ciclo
-				istanzia i vettori di predizione (v) e il vettore (c) che conta il numero di predizioni corrette.
-		training:	esegue il training sul dataset e restituisce i vettori di predizione e i vettori c calcolati ad ogni epoca.
-		predict:	calcola la label predetta a partire dall'istanza x.
+		init: riceve come parametri il dataset (images e labels), il numero di epoche, il kernel degree, il valore da cui iniziare il ciclo di training e il passo del ciclo
+			  istanzia i vettori di predizione (v) e il vettore (c) che conta il numero di predizioni corrette.
+		training: esegue il training sul dataset e restituisce i vettori di predizione e i vettori c calcolati ad ogni epoca.
+		predict: calcola la label predetta a partire dall'istanza x.
 
 training.py
 
 	- funzione trainingClasses01: permette di eseguire il training su tutte le epoche e le classi del dataset ridotto (solo del kernel degree passato come parametro alla funzione).
 	
-	- funzione trainingClasses:	permette di eseguire il training su tutte le epoche e le classi del dataset completo (solo del kernel degree passato come parametro alla funzione).
+	- funzione trainingClasses: permette di eseguire il training su tutte le epoche e le classi del dataset completo (solo del kernel degree passato come parametro alla funzione).
 	
 	- funzione trainingD: esegue tutti i training di uno specifico kernel degree passato come parametro alla funzione.
 	
