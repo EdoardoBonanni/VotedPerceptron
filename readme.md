@@ -5,7 +5,7 @@ i grafici per d = 1 e d = 2 della figura 2) ma utilizzando il dataset Zalando al
 
 ## Link utili
 
-[**Large Margin Classification Using the Perceptron Algorithm**](https://link.springer.com/content/pdf/10.1023/A:1007662407062.pdf) <br />
+[**Large Margin Classification Using the Perceptron Algorithm: Freund and Schaphire 1999**](https://link.springer.com/content/pdf/10.1023/A:1007662407062.pdf) <br />
 [**Zalando research**](https://github.com/zalandoresearch/fashion-mnist)
 
 ### Dataset
