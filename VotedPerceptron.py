@@ -1,7 +1,7 @@
 import numpy as np
 import usefulFunctions as uf
 
-class VotedPerceptronC:
+class VotedPerceptron:
     # y: labels in class {0, ..., 9} assume value -1,1
     # T: number of epochs
     # d: polynomial kernel of degree

@@ -22,7 +22,7 @@ def trainingClasses01(x, y, labels, T, d, start, step):
                 yl.append(-1)
         temp = yl.copy()
         yNewClass.append(temp)
-        votedP = vp.VotedPerceptronC(x, yl, T, d, start, step)
+        votedP = vp.VotedPerceptron(x, yl, T, d, start, step)
         vIndicesContainer, cContainer = votedP.training()
         for j in range(0, len(vIndicesContainer)):
             # insert the vectors calculated in a certain epoch of class l in the container
@@ -55,7 +55,7 @@ def trainingClasses(x, y, labels, T, d, start, step):
                 yl.append(-1)
         temp = yl.copy()
         yNewClass.append(temp)
-        votedP = vp.VotedPerceptronC(x, yl, T, d, start, step)
+        votedP = vp.VotedPerceptron(x, yl, T, d, start, step)
         vIndicesContainer, cContainer = votedP.training()
         for j in range(0, len(vIndicesContainer)):
             # insert the vectors calculated in a certain epoch of class l in the container
