@@ -19,8 +19,8 @@ def main():
     plt.imsave('zalandoDataset-sprite-test.png', h.get_sprite_image(Xtest), cmap='gray')
     plt.close()
     """
-    xNormal = Xtrain[0:100].copy()
-    yNormal = Ytrain[0:100].copy()
+    xNormal = Xtrain[0:200].copy()
+    yNormal = Ytrain[0:200].copy()
     xReduced01 = Xtrain[0:60].copy()
     yReduced01 = Ytrain[0:60].copy()
     VIC01, CC01, yNC01, VIC, CC, yNC = t.trainingD(xNormal, yNormal,
