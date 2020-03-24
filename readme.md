@@ -56,18 +56,14 @@ usefulFunctions.py
 	
 	- funzione predictLabelWithPolExp: predice la label attraverso l'espansione polinomiale.
 	
-	- funzione predLabelPolExprl: predice la label attraverso l'espansione polinomiale fino al passo rl (utilizzata per la predizione random).
-	
 	- funzione predictLabelStandard: predice la label nel modo standard.
-	
-	- funzione predLabelStandardrl: predice la label nel modo standard fino al passo rl (utilizzata per la predizione random)
 	
 VotedPerceptron.py
 
-	- classe VotedPerceptronC: contiene le informazioni e la funzione per svolgere il training del dataset utilizzando l'algoritmo Voted-perceptron
+	- classe VotedPerceptron: contiene le informazioni e la funzione per svolgere il training del dataset utilizzando l'algoritmo Voted-perceptron
 		init: riceve come parametri il dataset (images e labels), il numero di epoche, il kernel degree, il valore da cui iniziare il ciclo di training e il passo del ciclo infine istanzia i vettori di predizione (v) e il vettore (c) che conta il numero di predizioni corrette.
 		training: esegue il training sul dataset e restituisce i vettori di predizione e i vettori c calcolati ad ogni epoca.
-		predict: calcola la label predetta a partire dall'istanza x.
+		predict: predice la label a partire dall'istanza x.
 
 training.py
 
@@ -103,9 +99,9 @@ test.py
 	
 	- funzione prepareTest: permette di eseguire i test su tutte le epoche e le classi del dataset completo (solo del kernel degree passato come parametro alla funzione). Restituisce il vettore contenente gli errori di predizione in percentuale fatti attraverso i vari metodi di predizione del file predictions.py (metodi unnormalized e vote)       
 							
-	- funzione prepareTestComplete01: permette di eseguire i test su tutte le epoche e le classi del dataset ridotto (solo del kernel degree passato come parametro alla funzione). Restituisce il vettore contenente gli errori di predizione in percentuale fatti attraverso i vari metodi di predizione del file predictions.py                   	
+	- funzione prepareTestComplete01: permette di eseguire i test su tutte le epoche e le classi del dataset ridotto (solo del kernel degree passato come parametro alla funzione). Restituisce il vettore contenente gli errori di predizione in percentuale fatti attraverso i vari metodi di predizione del file predictions.py (risultato non implementato)                   	
 	
-	- funzione prepareTestComplete: permette di eseguire i test su tutte le epoche e le classi del dataset completo (solo del kernel degree passato come parametro alla funzione). Restituisce il vettore contenente gli errori di predizione in percentuale fatti attraverso i vari metodi di predizione del file predictions.py
+	- funzione prepareTestComplete: permette di eseguire i test su tutte le epoche e le classi del dataset completo (solo del kernel degree passato come parametro alla funzione). Restituisce il vettore contenente gli errori di predizione in percentuale fatti attraverso i vari metodi di predizione del file predictions.py (risultato non implementato)   
 									
 	- funzione allTest: esegue tutti i test di uno specifico kernel degree passato come parametro alla funzione e chiama la funzione plotGraphic per creare il grafico.
 	
@@ -113,7 +109,7 @@ test.py
 	
 main.py
 
-	- funzione main: Legge il dataset di apprendimento e di testing, crea le immagini contenenti del dataset di apprendimento e di testing, infine esegue il training, il test e stampa il grafico per il kernel degree 1 e 2.
+	- funzione main: Legge il dataset di apprendimento e di testing, crea le immagini relative al dataset di apprendimento e di testing; infine esegue il training, il test e stampa il grafico per il kernel degree 1 e 2.
 	
 	
 	
