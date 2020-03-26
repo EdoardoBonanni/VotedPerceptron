@@ -1,9 +1,8 @@
 from utils import zalandoReader as rz
 from utils import helper as h
-from utils import MNistReader as mr
 import training as t
 import test
-from configs import ZALANDO_DIR, MNIST_DIR
+from configs import ZALANDO_DIR
 import matplotlib.pyplot as plt
 
 
