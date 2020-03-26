@@ -1,8 +1,9 @@
 from utils import zalandoReader as rz
 from utils import helper as h
+from utils import MNistReader as mr
 import training as t
 import test
-from configs import ZALANDO_DIR
+from configs import ZALANDO_DIR, MNIST_DIR
 import matplotlib.pyplot as plt
 
 
@@ -13,28 +14,23 @@ def main():
     labels = ['t_shirt_top', 'trouser', 'pullover', 'dress', 'coat', 'sandal', 'shirt', 'sneaker', 'bag', 'ankle_boots']
     # test
     Xtest, Ytest = rz.load_zalando_t10k(path=ZALANDO_DIR)
-    """
     plt.imsave('zalandoDataset-sprite-train.png', h.get_sprite_image(Xtrain), cmap='gray')
     plt.close()
     plt.imsave('zalandoDataset-sprite-test.png', h.get_sprite_image(Xtest), cmap='gray')
     plt.close()
-    """
-    xNormal = Xtrain[0:10000].copy()
-    yNormal = Ytrain[0:10000].copy()
-    xReduced01 = Xtrain[0:1000].copy()
-    yReduced01 = Ytrain[0:1000].copy()
-    VIC01, CC01, yNC01, VIC, CC, yNC = t.trainingD(xNormal, yNormal,
+    xReduced01 = Xtrain[0:6000].copy()
+    yReduced01 = Ytrain[0:6000].copy()
+    VIC01, CC01, yNC01, VIC, CC, yNC = t.trainingD(Xtrain, Ytrain,
                                                    xReduced01, yReduced01, labels, 1)
-    XtestReduced = Xtest[0:2000].copy()
-    YtestReduced = Ytest[0:2000].copy()
     test.allTest(xReduced01, yNC01, VIC01, CC01,
-                 xNormal, yNC, VIC, CC,
-                 XtestReduced, YtestReduced, 1)
-    VIC01, CC01, yNC01, VIC, CC, yNC = t.trainingD(xNormal, yNormal,
+                 Xtrain, yNC, VIC, CC,
+                 Xtest, Ytest, 1)
+
+    VIC01, CC01, yNC01, VIC, CC, yNC = t.trainingD(Xtrain, Ytrain,
                                                    xReduced01, yReduced01, labels, 2)
     test.allTest(xReduced01, yNC01, VIC01, CC01,
-                 xNormal, yNC, VIC, CC,
-                 XtestReduced, YtestReduced, 2)
+                 Xtrain, yNC, VIC, CC,
+                 Xtest, Ytest, 2)
 
 
 if __name__ == '__main__':
